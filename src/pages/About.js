@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className="fl w-100 measure">
       {/* @TODO logo*/}
       {/* @TODO img*/}
-      <img src="" alt="" />
+      {/* <img src="" alt="" /> */}
       <h1>About</h1>
       {/* @TODO edit*/}
       <p>
@@ -15,7 +15,7 @@ const About = () => {
         architecto quisquam autem.
       </p>
       {/* @TODO link to download*/}
-      <a href="">Resume</a>
+      {/* <a href="">Resume</a> */}
     </div>
   );
 };

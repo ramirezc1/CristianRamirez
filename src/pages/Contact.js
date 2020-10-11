@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="fl w-100">
       {/* @TODO logo*/}
       <h1>Contact</h1>
       {/* @TODO add text */}

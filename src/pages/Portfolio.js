@@ -2,15 +2,10 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <div className="max-width">
-      {/* @TODO logo*/}
+    <div className="fl w-100">
       {/* @TODO add project links*/}
-      <a href="">
-        <div>Project1</div>
-      </a>
-      <a href="">
-        <div>Project2</div>
-      </a>
+      <div>Project1</div>
+      <div>Project2</div>
     </div>
   );
 };
