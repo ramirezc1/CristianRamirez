@@ -1,10 +1,6 @@
 import React from "react";
-// import About from "./About";
-// import Portfolio from "./Portfolio";
 import "./Home.css";
-// import Contact from "./Contact";
 import Link from "../components/Link";
-const path = "../../public/logo512.png";
 const Home = () => {
   return (
     <div className="pt7 pl5 f1 flex flex-column sans-serif fw8 no-underline">
