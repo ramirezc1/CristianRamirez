@@ -7,6 +7,7 @@ const Portfolio = () => {
       {/* @TODO add project links*/}
       <ProjectItem description="Description">Project1</ProjectItem>
       <ProjectItem description="Description">Project2</ProjectItem>
+      <ProjectItem description="Description">Project3</ProjectItem>
     </div>
   );
 };
