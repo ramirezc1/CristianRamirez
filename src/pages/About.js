@@ -6,6 +6,9 @@ const About = () => {
       {/* @TODO logo*/}
       {/* @TODO img*/}
       {/* <img src="" alt="" /> */}
+      <div className="w-100">
+        <img className="twic" data-src="placeholder:auto"></img>
+      </div>
       <h1>About</h1>
       {/* @TODO edit*/}
       <p>
