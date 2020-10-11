@@ -5,6 +5,7 @@ body {
   font-family: sans-serif;
   color: white;
   background: #000;
+  font-size: calc(1em + 1vw);
 }
 
 h1 {

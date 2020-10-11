@@ -3,7 +3,7 @@ import "./Home.css";
 import Link from "../components/Link";
 const Home = () => {
   return (
-    <div className="pt7 pl5 f1 flex flex-column sans-serif fw8 no-underline">
+    <div className="container mt6 pl5 flex flex-column sans-serif fw8 no-underline">
       <Link color="white" to="/about">
         About
       </Link>

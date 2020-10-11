@@ -1,11 +1,12 @@
 import React from "react";
+import ProjectItem from "../components/ProjectItem";
 
 const Portfolio = () => {
   return (
-    <div className="fl w-100">
+    <div className="fl w-100 mv6">
       {/* @TODO add project links*/}
-      <div>Project1</div>
-      <div>Project2</div>
+      <ProjectItem description="Description">Project1</ProjectItem>
+      <ProjectItem description="Description">Project2</ProjectItem>
     </div>
   );
 };
