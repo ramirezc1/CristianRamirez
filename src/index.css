@@ -1,4 +1,12 @@
+html,
 body {
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
+  font-family: "Semibold";
+  color: white;
+  background: #000;
+}
+
+h1 {
+  color: white;
 }
