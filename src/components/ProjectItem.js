@@ -1,11 +1,11 @@
 import React from "react";
 
-const ProjectItem = ({ children, description }) => {
+const ProjectItem = ({ src, children, description }) => {
   return (
-    <div>
-      <h1 className="mb2">{children}</h1>
-      <p className="f6 dark-red ma0">{description}</p>
-    </div>
+    <a className="no-underline" href={src}>
+      <p className="white mb2 f1 fw6 ">{children}</p>
+      <p className="f7 dark-red ma0">{description}</p>
+    </a>
   );
 };
 

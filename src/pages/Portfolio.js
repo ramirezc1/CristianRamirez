@@ -3,11 +3,20 @@ import ProjectItem from "../components/ProjectItem";
 
 const Portfolio = () => {
   return (
-    <div className="fl w-100 mv6">
+    <div className="w-100 mt6 pl3">
       {/* @TODO add project links*/}
-      <ProjectItem description="Description">Project1</ProjectItem>
-      <ProjectItem description="Description">Project2</ProjectItem>
-      <ProjectItem description="Description">Project3</ProjectItem>
+      <ProjectItem
+        src="https://crwn-live-lt.herokuapp.com/"
+        description="React Clothing store app"
+      >
+        Clothing Store
+      </ProjectItem>
+      <ProjectItem description="Reac FacRecognition app">
+        FaceRecognition
+      </ProjectItem>
+      <ProjectItem description="React RobotFriends app">
+        RobotFriends
+      </ProjectItem>
     </div>
   );
 };
