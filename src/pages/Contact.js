@@ -1,37 +1,48 @@
 import React from "react";
 import AnimateBounce from "../components/AnimateBounce";
-import "./Contact.css";
+import {HeadingText, SubHeadingText, Text} from '../components/TextStyles'
+import styled from "styled-components";
+
+const Container = styled.div`
+  margin-top: 8rem;
+  margin: 0 auto;
+  width: 90%;
+`;
+
+const ContactContainer = styled.div`
+  margin: 0 auto;
+  max-width: 70%;
+  @media only screen and (max-width: 600px) {
+    max-width: 90%;
+    margin: auto;
+  }
+`;
+
+
 
 const Contact = () => {
-  const copyCodeToClipboard = () => {
-    const el = this.textArea;
-    el.select();
-    document.execCommand("copy");
-  };
   return (
-    <div className="mt6 centerDiv">
+    <Container>
       {/* @TODO logo*/}
       <AnimateBounce y={100}>
-        <h1 className="f0 mv6">Lorem ipsum dolor </h1>
+        <HeadingText>Lorem ipsum dolor </HeadingText>
       </AnimateBounce>
 
-      <div className="center flex-column pb3 container">
-        <h1 className="f3 pt5 fw6">Contact</h1>
+      <ContactContainer>
+        <SubHeadingText>Contact</SubHeadingText>
         {/* @TODO edit*/}
-        <p className="f6 fw1 lh-copy">
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sunt
           rerum in ab. Atque, nobis hic cum ad harum repellendus odio illum
           ullam facere quam qui quis dolores eveniet impedit?
-        </p>
-        <p className="f6 fw1 lh-copy">
+        </Text>
+        <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
           commodi officia magnam. Hic ex, rerum eligendi, quae aperiam fugiat
           commodi beatae cum dolorem eveniet voluptatum. Ad sint mollitia odit
           ratione?
-        </p>
-        <p className="f6 fw1 lh-copy">
-          Lorem ipsum dolor sit amet consectetur adipisicing
-        </p>
+        </Text>
+        <Text>Lorem ipsum dolor sit amet consectetur adipisicing</Text>
 
         <a
           className="no-underline f5 dark-red"
@@ -47,8 +58,8 @@ const Contact = () => {
           <br />
           LinkedIn
         </a>
-      </div>
-    </div>
+      </ContactContainer>
+    </Container>
   );
 };
 

@@ -2,41 +2,56 @@ import React from "react";
 import { Link } from "react-router-dom";
 import AnimateBounce from "../components/AnimateBounce";
 import AnimatedLink from "../components/AnimatedLink";
+import styled from "styled-components";
+import { HeadingText, SubHeadingText, Text } from "../components/TextStyles";
+
+const Container = styled.div`
+  margin-top: 8rem;
+  margin: 0 auto;
+  width: 90%;
+`;
+
+const imageContainer = styled.div`
+  width: 100vw;
+  height: 70vh;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+`;
 
 const About = () => {
   return (
-    <div className="mt6 centerDiv">
+    <Container>
       {/* @TODO logo*/}
       {/* @TODO img*/}
       <AnimateBounce y={100}>
-        <h1 className="f1 mv7">Lorem ipsum dolor sit amet </h1>
+        <HeadingText>Lorem ipsum dolor sit amet </HeadingText>
       </AnimateBounce>
 
-      <div className="mt4 mb2" style={{ width: "100vw", height: "70vh" }}>
+      <imageContainer>
         <img alt="" className="twic" data-src="placeholder:auto"></img>
-      </div>
+      </imageContainer>
       <div className="center flex-column pb3 container">
-        <h1 className="f3 pt5 fw6 self-start">About</h1>
+        <SubHeadingText>About</SubHeadingText>
         {/* @TODO edit*/}
-        <p className="f5 fw1 lh-copy">
+        <Text>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
           maiores, autem voluptatibus hic animi dolores nobis ullam excepturi
           aliquid. Quibusdam assumenda nihil.
-        </p>
+        </Text>
 
-        <p className="f6 fw1 lh-copy">
+        <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
           voluptas omnis iusto, esse, perspiciatis expedita amet nisi deserunt
           eaque, magnam non. Minima architecto atque iste non quia laudantium
           magni modi.
-        </p>
+        </Text>
 
-        <p className="f6 fw1 lh-copy">
+        <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
           voluptas omnis iusto, esse, perspiciatis expedita amet nisi deserunt
           eaque, magnam non. Minima architecto atque iste non quia laudantium
           magni modi.
-        </p>
+        </Text>
         <AnimatedLink>
           <Link
             to="/files/Resume.pdf"
@@ -48,7 +63,7 @@ const About = () => {
           </Link>
         </AnimatedLink>
       </div>
-    </div>
+    </Container>
   );
 };
 
