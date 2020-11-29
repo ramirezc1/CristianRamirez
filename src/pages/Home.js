@@ -1,6 +1,7 @@
 import React from "react";
 import AnimatedSwitchLink from "../components/AnimatedSwitchLink";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import img from "./me.png";
 
 const BigImage = styled.div`
@@ -14,7 +15,7 @@ const BigImage = styled.div`
   left: 50%;
 `;
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   padding-top: 4rem;
   padding-left: 4rem;
 `;
@@ -23,7 +24,7 @@ const Home = () => {
   return (
     <Container>
       <AnimatedSwitchLink
-        inputColor="white"
+        inputColor="#ffffff"
         fromText="Hello."
         toText="About"
         toLink="/about"

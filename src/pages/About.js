@@ -1,36 +1,71 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import AnimateBounce from "../components/AnimateBounce";
-import AnimatedLink from "../components/AnimatedLink";
+
 import styled from "styled-components";
 import { HeadingText, SubHeadingText, Text } from "../components/TextStyles";
+import HeightAnimation from "../components/HeightAnimation";
+// import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import withHoverAnimation from "../components/withAnimation";
 
+// const LinkWithAnimation = withAnimation(Link);
 const Container = styled.div`
-  margin-top: 8rem;
   margin: 0 auto;
-  width: 90%;
+  max-width: 21.5em;
 `;
 
-const imageContainer = styled.div`
+const SubContainer = styled.div`
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+`;
+
+const ImageContainer = styled.div`
   width: 100vw;
   height: 70vh;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 `;
 
+const AboutContainer = styled.div`
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  max-width: 70%;
+  @media only screen and (max-width: 600px) {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 5rem;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #e7040f;
+  font-size: 0.75rem;
+`;
+
+const AnimatedLink = withHoverAnimation(StyledLink);
+
+const onHoverVariant = {
+  hover: {
+    x: 20,
+  },
+};
+
+
 const About = () => {
   return (
     <Container>
       {/* @TODO logo*/}
       {/* @TODO img*/}
-      <AnimateBounce y={100}>
-        <HeadingText>Lorem ipsum dolor sit amet </HeadingText>
-      </AnimateBounce>
+      <SubContainer>
+        <HeightAnimation>
+          <HeadingText>Lorem ipsum dolor sit amet </HeadingText>
+        </HeightAnimation>
+      </SubContainer>
 
-      <imageContainer>
+      <ImageContainer>
         <img alt="" className="twic" data-src="placeholder:auto"></img>
-      </imageContainer>
-      <div className="center flex-column pb3 container">
+      </ImageContainer>
+      <AboutContainer>
         <SubHeadingText>About</SubHeadingText>
         {/* @TODO edit*/}
         <Text>
@@ -52,17 +87,16 @@ const About = () => {
           eaque, magnam non. Minima architecto atque iste non quia laudantium
           magni modi.
         </Text>
-        <AnimatedLink>
-          <Link
-            to="/files/Resume.pdf"
-            className="dark-red self-start f5 no-underline mb3 f-5 lh-solid"
-            target="_blank"
-            download
-          >
-            My Resume (pdf)
-          </Link>
+
+        <AnimatedLink
+          variant={onHoverVariant}
+          to="/files/Resume.pdf"
+          target="_blank"
+          download
+        >
+          My Resume (pdf)
         </AnimatedLink>
-      </div>
+      </AboutContainer>
     </Container>
   );
 };

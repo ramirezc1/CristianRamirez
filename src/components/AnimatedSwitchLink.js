@@ -1,13 +1,30 @@
 import React, { useState } from "react";
 
-import AnimatedContainer from "./AnimatedContainer";
+import { motion } from "framer-motion";
+import styled from "styled-components";
 import Link from "./Link";
 
+const Container = styled(motion.div)`
+  position: relative;
+  margin: 20px;
+  width: fit-content;
+  z-index: 1;
+  /* background: rgba(255, 255, 255, 0.2); */
+`;
 
 const AnimatedSwitchLink = ({ toLink, inputColor, fromText, toText }) => {
   const [value, setValue] = useState(false);
   return (
-    <AnimatedContainer value={value} setValue={setValue} x={50}>
+    <Container
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: -10, opacity: 1 }}
+      onHoverStart={() => {
+        setValue(true);
+      }}
+      onHoverEnd={() => {
+        setValue(false);
+      }}
+    >
       {value ? (
         <Link inputColor={inputColor} to={toLink}>
           {toText}
@@ -17,7 +34,7 @@ const AnimatedSwitchLink = ({ toLink, inputColor, fromText, toText }) => {
           {fromText}
         </Link>
       )}
-    </AnimatedContainer>
+    </Container>
   );
 };
 
