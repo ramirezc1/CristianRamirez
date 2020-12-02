@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const StyledLink = styled(RouterLink)`
   color: ${(props) => props.color || props.theme.linkColor};
-  font-size: 5rem;
+  font-size: 18vmin;
   text-decoration: none;
   margin-bottom: 1rem;
   font-weight: 700;

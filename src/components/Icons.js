@@ -9,9 +9,14 @@ import { Html5 } from "@icons-pack/react-simple-icons";
 import { StyledComponents } from "@icons-pack/react-simple-icons";
 
 const Container = styled(motion.div)`
-  width: fit-content;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
   height: fit-content;
-  display: inline-block;
+  color: white;
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+  }
 `;
 
 const Icons = ({

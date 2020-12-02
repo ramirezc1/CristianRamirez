@@ -6,40 +6,49 @@ import HeightAnimation from "../components/HeightAnimation";
 // import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import withHoverAnimation from "../components/withAnimation";
+import img from "./family.JPG";
 
 // const LinkWithAnimation = withAnimation(Link);
 const Container = styled.div`
   margin: 0 auto;
-  max-width: 21.5em;
+  max-width: 86%;
 `;
 
 const SubContainer = styled.div`
   margin-top: 10rem;
   margin-bottom: 10rem;
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  @media only screen and (max-width: 600px) {
+    max-width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+  }
 `;
 
-const ImageContainer = styled.div`
-  width: 100vw;
-  height: 70vh;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+const Image = styled.img`
+  border-radius: 5px 20px 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 `;
 
 const AboutContainer = styled.div`
   margin: 0 auto;
   padding-bottom: 5rem;
+  padding-top: 5rem;
   max-width: 70%;
   @media only screen and (max-width: 600px) {
-    max-width: 90%;
     margin: auto;
-    padding-bottom: 5rem;
+    max-width: 100%;
+    padding-top: 1rem;
   }
 `;
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #e7040f;
-  font-size: 0.75rem;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 700;
 `;
 
 const AnimatedLink = withHoverAnimation(StyledLink);
@@ -49,7 +58,6 @@ const onHoverVariant = {
     x: 20,
   },
 };
-
 
 const About = () => {
   return (
@@ -62,9 +70,7 @@ const About = () => {
         </HeightAnimation>
       </SubContainer>
 
-      <ImageContainer>
-        <img alt="" className="twic" data-src="placeholder:auto"></img>
-      </ImageContainer>
+      <Image src={img}></Image>
       <AboutContainer>
         <SubHeadingText>About</SubHeadingText>
         {/* @TODO edit*/}
