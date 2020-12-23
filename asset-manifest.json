@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.e0919c18.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e0919c18.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.62ee8881.chunk.js": "/portfolio/static/js/2.62ee8881.chunk.js",
-    "static/js/2.62ee8881.chunk.js.map": "/portfolio/static/js/2.62ee8881.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.b9aa2ccedfab974dff729ec150ff9cc9.js": "/portfolio/precache-manifest.b9aa2ccedfab974dff729ec150ff9cc9.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/js/2.62ee8881.chunk.js.LICENSE.txt": "/portfolio/static/js/2.62ee8881.chunk.js.LICENSE.txt",
-    "static/media/face.png": "/portfolio/static/media/face.e6240ac7.png",
-    "static/media/family.JPG": "/portfolio/static/media/family.a58257b8.JPG",
-    "static/media/me3.png": "/portfolio/static/media/me3.c9caeb84.png",
-    "static/media/robots.png": "/portfolio/static/media/robots.99191d7c.png",
-    "static/media/store.png": "/portfolio/static/media/store.b53dd15b.png"
+    "main.js": "/cristianramirez/static/js/main.9b9482e8.chunk.js",
+    "main.js.map": "/cristianramirez/static/js/main.9b9482e8.chunk.js.map",
+    "runtime-main.js": "/cristianramirez/static/js/runtime-main.60b0df10.js",
+    "runtime-main.js.map": "/cristianramirez/static/js/runtime-main.60b0df10.js.map",
+    "static/js/2.2a59cddf.chunk.js": "/cristianramirez/static/js/2.2a59cddf.chunk.js",
+    "static/js/2.2a59cddf.chunk.js.map": "/cristianramirez/static/js/2.2a59cddf.chunk.js.map",
+    "index.html": "/cristianramirez/index.html",
+    "precache-manifest.3d5eaa3afbd62613f009d37bf8dcf008.js": "/cristianramirez/precache-manifest.3d5eaa3afbd62613f009d37bf8dcf008.js",
+    "service-worker.js": "/cristianramirez/service-worker.js",
+    "static/js/2.2a59cddf.chunk.js.LICENSE.txt": "/cristianramirez/static/js/2.2a59cddf.chunk.js.LICENSE.txt",
+    "static/media/face.png": "/cristianramirez/static/media/face.e6240ac7.png",
+    "static/media/family.JPG": "/cristianramirez/static/media/family.a58257b8.JPG",
+    "static/media/logo2.png": "/cristianramirez/static/media/logo2.39db6de6.png",
+    "static/media/me.png": "/cristianramirez/static/media/me.c9caeb84.png",
+    "static/media/robots.png": "/cristianramirez/static/media/robots.99191d7c.png",
+    "static/media/store.png": "/cristianramirez/static/media/store.b53dd15b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.62ee8881.chunk.js",
-    "static/js/main.e0919c18.chunk.js"
+    "static/js/runtime-main.60b0df10.js",
+    "static/js/2.2a59cddf.chunk.js",
+    "static/js/main.9b9482e8.chunk.js"
   ]
 }
