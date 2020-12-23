@@ -11,10 +11,17 @@ const App = () => {
     <>
       <AnimatePresence>
         <Switch>
-          <Route exact path="/cristianramirez/" component={Home} />
-          <Route path="/cristianramirez/about" component={About} />
-          <Route path="/cristianramirez/portfolio" component={Portfolio} />
-          <Route path="/cristianramirez/contact" component={Contact} />
+          <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+          {console.log(process.env.PUBLIC_URL)}
+          <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
+          <Route
+            path={`${process.env.PUBLIC_URL}/portfolio`}
+            component={Portfolio}
+          />
+          <Route
+            path={`${process.env.PUBLIC_URL}/contact`}
+            component={Contact}
+          />
         </Switch>
       </AnimatePresence>
     </>

@@ -41,17 +41,17 @@ const Home = () => {
         inputColor="#ffffff"
         fromText="Hello."
         toText="About"
-        toLink="/cristianramirez/about"
+        toLink={`${process.env.PUBLIC_URL}/about`}
       ></AnimatedSwitchLink>
       <AnimatedSwitchLink
         fromText="I am  "
         toText="Portfolio"
-        toLink="/cristianramirez/portfolio"
+        toLink={`${process.env.PUBLIC_URL}/portfolio`}
       ></AnimatedSwitchLink>
       <AnimatedSwitchLink
         fromText="Cristian"
         toText="Contact"
-        toLink="/cristianramirez/contact"
+        toLink={`${process.env.PUBLIC_URL}/contact`}
       ></AnimatedSwitchLink>
 
       <BigImage
