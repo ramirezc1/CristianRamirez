@@ -11,10 +11,10 @@ const App = () => {
     <>
       <AnimatePresence>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/Contact" component={Contact} />
+          <Route exact path="/cristianramirez/" component={Home} />
+          <Route path="/cristianramirez/about" component={About} />
+          <Route path="/cristianramirez/portfolio" component={Portfolio} />
+          <Route path="/cristianramirez/contact" component={Contact} />
         </Switch>
       </AnimatePresence>
     </>

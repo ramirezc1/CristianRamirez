@@ -2,7 +2,8 @@ import React from "react";
 import AnimatedSwitchLink from "../components/AnimatedSwitchLink";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import img from "./me3.png";
+import img from "../assets/images/me.png";
+import logo from "../assets/images/logo2.png";
 
 const BigImage = styled.div`
   background-size: cover;
@@ -18,6 +19,10 @@ const BigImage = styled.div`
   }
 `;
 
+const Logo = styled.div`
+  background-image: url(${logo});
+`;
+
 const Container = styled(motion.div)`
   padding-top: 4rem;
   padding-left: 4rem;
@@ -31,21 +36,22 @@ const Container = styled(motion.div)`
 const Home = () => {
   return (
     <Container>
+      <Logo></Logo>
       <AnimatedSwitchLink
         inputColor="#ffffff"
         fromText="Hello."
         toText="About"
-        toLink="/about"
+        toLink="/cristianramirez/about"
       ></AnimatedSwitchLink>
       <AnimatedSwitchLink
         fromText="I am  "
         toText="Portfolio"
-        toLink="/portfolio"
+        toLink="/cristianramirez/portfolio"
       ></AnimatedSwitchLink>
       <AnimatedSwitchLink
         fromText="Cristian"
         toText="Contact"
-        toLink="/contact"
+        toLink="/cristianramirez/contact"
       ></AnimatedSwitchLink>
 
       <BigImage
