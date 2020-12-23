@@ -14,7 +14,7 @@ const Container = styled.div`
   max-width: 86%;
 `;
 
-const SubContainer = styled.div`
+const SubContainer = styled.section`
   margin-top: 10rem;
   margin-bottom: 10rem;
   max-width: 70%;
@@ -28,11 +28,12 @@ const SubContainer = styled.div`
 `;
 
 const Image = styled.img`
+  max-width: 100%;
   border-radius: 5px 20px 5px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 `;
 
-const AboutContainer = styled.div`
+const AboutContainer = styled.section`
   margin: 0 auto;
   padding-bottom: 5rem;
   padding-top: 5rem;

@@ -1,5 +1,4 @@
 import React from "react";
-import "tachyons";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";

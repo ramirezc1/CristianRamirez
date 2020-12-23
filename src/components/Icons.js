@@ -14,8 +14,16 @@ const Container = styled(motion.div)`
   justify-content: space-around;
   height: fit-content;
   color: white;
+
   @media only screen and (max-width: 600px) {
     justify-content: center;
+  }
+`;
+
+const StyledReactJs = styled(ReactJs)`
+  :hover {
+    fill: black;
+    scale: 1.4;
   }
 `;
 
@@ -29,7 +37,7 @@ const Icons = ({
   variant,
 }) => (
   <Container variants={variant} whileHover="hover" initial="initial">
-    {reactjs && <ReactJs />}
+    {reactjs && <StyledReactJs />}
     {html && <Html5 />}
     {css && <Css3 />}
     {styledComponents && <StyledComponents />}

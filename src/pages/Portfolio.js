@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import { wrap } from "popmotion";
 import styled from "styled-components";
 import Project from "../components/Project";
-import store from "../images/store.png";
-import robots from "../images/robots.png";
-import face from "../images/face.png";
-import bImage from "../images/b.jpg";
+import store from "../assets/images/store.png";
+import robots from "../assets/images/robots.png";
+import face from "../assets/images/face.png";
 
 const Container = styled.div`
   display: flex;
@@ -15,7 +14,6 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-
   @media only screen and (max-width: 600px) {
   }
 `;
@@ -63,14 +61,14 @@ const data = [
   {
     image: face,
     title: "FaceDetection",
-    description: "Udemy Course Project",
+    description: "Full Stack App",
     url: "https://face-recognition-app2.herokuapp.com/",
     icons: { reactjs: true, html: true },
   },
   {
     image: robots,
     title: "RobotFriends",
-    description: "Udemy Course Project",
+    description: "PWA React App",
     url: "https://ramirezc1.github.io/RobotFriends/",
     icons: { reactjs: true, html: true, redux: true },
   },
@@ -80,7 +78,7 @@ const Portfolio = () => {
   const [page, setPage] = useState(0);
 
   const index = wrap(0, data.length, page);
-  console.log(index);
+
   const paginate = (newDirection) => {
     setPage(page + newDirection);
   };
@@ -101,7 +99,6 @@ const Portfolio = () => {
       <Prev whileHover={{ scale: 1.2 }} onClick={() => paginate(-1)}>
         &#10094;
       </Prev>
-      {/* </AnimatePresence> */}
     </Container>
   );
 };

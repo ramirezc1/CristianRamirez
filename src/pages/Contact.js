@@ -15,7 +15,7 @@ const Container = styled.div`
   }
 `;
 
-const ContactContainer = styled.div`
+const ContactContainer = styled.section`
   margin: 0 auto;
   max-width: 70%;
   padding-bottom: 5rem;
@@ -26,7 +26,7 @@ const ContactContainer = styled.div`
   }
 `;
 
-const SubContainer = styled.div`
+const SubContainer = styled.section`
   margin-top: 8rem;
   margin-bottom: 8rem;
   margin-right: auto;
@@ -79,6 +79,7 @@ const Contact = () => {
         </Text>
         <Text>Lorem ipsum dolor sit amet consectetur adipisicing</Text>
 
+        {/* TODO- add icons  */}
         <AnimatedLink
           variant={onHoverVariant}
           href="mailto:ramirezcristian81@live.com"
