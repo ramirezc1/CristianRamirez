@@ -7,6 +7,7 @@ import HeightAnimation from "../components/HeightAnimation";
 import { Link } from "react-router-dom";
 import withHoverAnimation from "../components/withAnimation";
 import img from "./family.JPG";
+import Logo from "../components/Logo";
 
 // const LinkWithAnimation = withAnimation(Link);
 const Container = styled.div`
@@ -63,36 +64,41 @@ const onHoverVariant = {
 const About = () => {
   return (
     <Container>
-      {/* @TODO logo*/}
-      {/* @TODO img*/}
+      <Logo></Logo>
+
       <SubContainer>
         <HeightAnimation>
-          <HeadingText>Lorem ipsum dolor sit amet </HeadingText>
+          <HeadingText>Hello and Welcome to my website.</HeadingText>
         </HeightAnimation>
       </SubContainer>
 
       <Image src={img}></Image>
       <AboutContainer>
         <SubHeadingText>About</SubHeadingText>
-        {/* @TODO edit*/}
+
+        <Text>My name is Cristian Ramirez.</Text>
+
         <Text>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
-          maiores, autem voluptatibus hic animi dolores nobis ullam excepturi
-          aliquid. Quibusdam assumenda nihil.
+          I was born in Mexico, raised in Oregon and am currently living in the
+          Bay Area.Education has always been very important to me as a first
+          generation college graduate. After finishing my undergrad in Computer
+          Science at Southern Oregon University, I went on to get my Masters at
+          the University of Oregon where I started teaching web development
+          sparking my interest in the field even more.
         </Text>
 
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          voluptas omnis iusto, esse, perspiciatis expedita amet nisi deserunt
-          eaque, magnam non. Minima architecto atque iste non quia laudantium
-          magni modi.
+          I am highly adaptable and driven to learn and develop my existing
+          skills. My free time I like to spend time with my wife and two kids. I
+          enjoy traveling, preferably outside the country but love finding local
+          places to visit too.
         </Text>
-
         <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          voluptas omnis iusto, esse, perspiciatis expedita amet nisi deserunt
-          eaque, magnam non. Minima architecto atque iste non quia laudantium
-          magni modi.
+          I created this website to present my current React skills and examples
+          of my code as I seek a job as a web developer. I would welcome the
+          opportunity to bring my skills to real projects. Ideally I wish to
+          become a valuable asset, and build ongoing relationships in this
+          growing industry.
         </Text>
 
         <AnimatedLink

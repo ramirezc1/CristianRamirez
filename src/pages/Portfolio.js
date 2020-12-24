@@ -7,6 +7,7 @@ import Project from "../components/Project";
 import store from "../assets/images/store.png";
 import robots from "../assets/images/robots.png";
 import face from "../assets/images/face.png";
+import Logo from "../components/Logo";
 
 const Container = styled.div`
   display: flex;
@@ -16,6 +17,11 @@ const Container = styled.div`
   width: 100vw;
   @media only screen and (max-width: 600px) {
   }
+`;
+
+const CenteredLogo = styled(Logo)`
+  top: 50px;
+  left: 80vw;
 `;
 
 const Button = styled(motion.div)`
@@ -85,6 +91,7 @@ const Portfolio = () => {
 
   return (
     <Container>
+      <CenteredLogo></CenteredLogo>
       <Project
         key={data[index].title}
         title={data[index].title}

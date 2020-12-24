@@ -4,31 +4,31 @@ import { HeadingText, SubHeadingText, Text } from "../components/TextStyles";
 import styled from "styled-components";
 import HeightAnimation from "../components/HeightAnimation";
 import withHoverAnimation from "../components/withAnimation";
+import Logo from "../components/Logo";
 
 const Container = styled.div`
-  margin-top: 8rem;
+  margin-top: 5rem;
+  width: 100vw;
   margin: 0 auto;
-  max-width: 21.5em;
   max-width: 95%;
+  overflow-y: hidden;
   @media only screen and (max-width: 600px) {
     margin: auto;
+    max-width: 80%;
   }
 `;
 
 const ContactContainer = styled.section`
   margin: 0 auto;
   max-width: 70%;
-  padding-bottom: 5rem;
   @media only screen and (max-width: 600px) {
     max-width: 95%;
     margin: auto;
-    padding-bottom: 5rem;
   }
 `;
 
 const SubContainer = styled.section`
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 4rem;
   margin-right: auto;
   margin-left: auto;
   max-width: 70%;
@@ -57,7 +57,7 @@ const onHoverVariant = {
 const Contact = () => {
   return (
     <Container>
-      {/* @TODO logo*/}
+      <Logo></Logo>
       <SubContainer>
         <HeightAnimation>
           <HeadingText>Let’s Connect</HeadingText>
@@ -67,17 +67,9 @@ const Contact = () => {
       <ContactContainer>
         <SubHeadingText>Contact</SubHeadingText>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sunt
-          rerum in ab. Atque, nobis hic cum ad harum repellendus odio illum
-          ullam facere quam qui quis dolores eveniet impedit?
+          Please don't hesitate to reach out if you have any questions. I look
+          forward to connecting and gaining new experiences.  
         </Text>
-        <Text>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          commodi officia magnam. Hic ex, rerum eligendi, quae aperiam fugiat
-          commodi beatae cum dolorem eveniet voluptatum. Ad sint mollitia odit
-          ratione?
-        </Text>
-        <Text>Lorem ipsum dolor sit amet consectetur adipisicing</Text>
 
         {/* TODO- add icons  */}
         <AnimatedLink

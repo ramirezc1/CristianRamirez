@@ -3,7 +3,7 @@ import AnimatedSwitchLink from "../components/AnimatedSwitchLink";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import img from "../assets/images/me.png";
-import logo from "../assets/images/logo2.png";
+import Logo from "../components/Logo";
 
 const BigImage = styled.div`
   background-size: cover;
@@ -17,10 +17,6 @@ const BigImage = styled.div`
   @media only screen and (max-width: 600px) {
     left: -10%;
   }
-`;
-
-const Logo = styled.div`
-  background-image: url(${logo});
 `;
 
 const Container = styled(motion.div)`
@@ -37,6 +33,7 @@ const Home = () => {
   return (
     <Container>
       <Logo></Logo>
+
       <AnimatedSwitchLink
         inputColor="#ffffff"
         fromText="Hello."
@@ -54,11 +51,7 @@ const Home = () => {
         toLink={`${process.env.PUBLIC_URL}/contact`}
       ></AnimatedSwitchLink>
 
-      <BigImage
-      // className="bg_image"
-      // className="bg_image twic"
-      // data-background="url(placeholder:auto)"
-      ></BigImage>
+      <BigImage></BigImage>
     </Container>
   );
 };
