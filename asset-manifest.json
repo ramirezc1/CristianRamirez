@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.js": "/cristianramirez/static/js/main.8a4e9683.chunk.js",
-    "main.js.map": "/cristianramirez/static/js/main.8a4e9683.chunk.js.map",
-    "runtime-main.js": "/cristianramirez/static/js/runtime-main.60b0df10.js",
-    "runtime-main.js.map": "/cristianramirez/static/js/runtime-main.60b0df10.js.map",
-    "static/js/2.0294607d.chunk.js": "/cristianramirez/static/js/2.0294607d.chunk.js",
-    "static/js/2.0294607d.chunk.js.map": "/cristianramirez/static/js/2.0294607d.chunk.js.map",
-    "index.html": "/cristianramirez/index.html",
-    "precache-manifest.e625ee733c1870204dcd3815afaa80a0.js": "/cristianramirez/precache-manifest.e625ee733c1870204dcd3815afaa80a0.js",
-    "service-worker.js": "/cristianramirez/service-worker.js",
-    "static/js/2.0294607d.chunk.js.LICENSE.txt": "/cristianramirez/static/js/2.0294607d.chunk.js.LICENSE.txt",
-    "static/media/face.png": "/cristianramirez/static/media/face.e6240ac7.png",
-    "static/media/family.JPG": "/cristianramirez/static/media/family.a58257b8.JPG",
-    "static/media/logo1.svg": "/cristianramirez/static/media/logo1.45ac6690.svg",
-    "static/media/logo1.png": "/cristianramirez/static/media/logo1.ea555437.png",
-    "static/media/me.png": "/cristianramirez/static/media/me.c9caeb84.png",
-    "static/media/robots.png": "/cristianramirez/static/media/robots.99191d7c.png",
-    "static/media/store.png": "/cristianramirez/static/media/store.b53dd15b.png"
+    "main.js": "/CristianRamirez/static/js/main.fa7c0a51.chunk.js",
+    "main.js.map": "/CristianRamirez/static/js/main.fa7c0a51.chunk.js.map",
+    "runtime-main.js": "/CristianRamirez/static/js/runtime-main.f1014ac7.js",
+    "runtime-main.js.map": "/CristianRamirez/static/js/runtime-main.f1014ac7.js.map",
+    "static/js/2.2760a6fa.chunk.js": "/CristianRamirez/static/js/2.2760a6fa.chunk.js",
+    "static/js/2.2760a6fa.chunk.js.map": "/CristianRamirez/static/js/2.2760a6fa.chunk.js.map",
+    "index.html": "/CristianRamirez/index.html",
+    "static/js/2.2760a6fa.chunk.js.LICENSE.txt": "/CristianRamirez/static/js/2.2760a6fa.chunk.js.LICENSE.txt",
+    "static/media/face.aa1b77ec.png": "/CristianRamirez/static/media/face.aa1b77ec.png",
+    "static/media/family.b9e99aeb.JPG": "/CristianRamirez/static/media/family.b9e99aeb.JPG",
+    "static/media/logo1.737094d0.svg": "/CristianRamirez/static/media/logo1.737094d0.svg",
+    "static/media/logo1.f5f8f013.png": "/CristianRamirez/static/media/logo1.f5f8f013.png",
+    "static/media/me.456977d7.png": "/CristianRamirez/static/media/me.456977d7.png",
+    "static/media/robots.c9db348c.png": "/CristianRamirez/static/media/robots.c9db348c.png",
+    "static/media/store.a5f5af07.png": "/CristianRamirez/static/media/store.a5f5af07.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.60b0df10.js",
-    "static/js/2.0294607d.chunk.js",
-    "static/js/main.8a4e9683.chunk.js"
+    "static/js/runtime-main.f1014ac7.js",
+    "static/js/2.2760a6fa.chunk.js",
+    "static/js/main.fa7c0a51.chunk.js"
   ]
 }
