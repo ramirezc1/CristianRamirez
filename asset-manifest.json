@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/CristianRamirez/static/js/main.fa7c0a51.chunk.js",
-    "main.js.map": "/CristianRamirez/static/js/main.fa7c0a51.chunk.js.map",
+    "main.js": "/CristianRamirez/static/js/main.a56e041a.chunk.js",
+    "main.js.map": "/CristianRamirez/static/js/main.a56e041a.chunk.js.map",
     "runtime-main.js": "/CristianRamirez/static/js/runtime-main.f1014ac7.js",
     "runtime-main.js.map": "/CristianRamirez/static/js/runtime-main.f1014ac7.js.map",
     "static/js/2.2760a6fa.chunk.js": "/CristianRamirez/static/js/2.2760a6fa.chunk.js",
@@ -10,15 +10,14 @@
     "static/js/2.2760a6fa.chunk.js.LICENSE.txt": "/CristianRamirez/static/js/2.2760a6fa.chunk.js.LICENSE.txt",
     "static/media/face.aa1b77ec.png": "/CristianRamirez/static/media/face.aa1b77ec.png",
     "static/media/family.b9e99aeb.JPG": "/CristianRamirez/static/media/family.b9e99aeb.JPG",
-    "static/media/logo1.737094d0.svg": "/CristianRamirez/static/media/logo1.737094d0.svg",
-    "static/media/logo1.f5f8f013.png": "/CristianRamirez/static/media/logo1.f5f8f013.png",
-    "static/media/me.456977d7.png": "/CristianRamirez/static/media/me.456977d7.png",
+    "static/media/logo.f5f8f013.png": "/CristianRamirez/static/media/logo.f5f8f013.png",
+    "static/media/me.4c59cf26.png": "/CristianRamirez/static/media/me.4c59cf26.png",
     "static/media/robots.c9db348c.png": "/CristianRamirez/static/media/robots.c9db348c.png",
     "static/media/store.a5f5af07.png": "/CristianRamirez/static/media/store.a5f5af07.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f1014ac7.js",
     "static/js/2.2760a6fa.chunk.js",
-    "static/js/main.fa7c0a51.chunk.js"
+    "static/js/main.a56e041a.chunk.js"
   ]
 }
