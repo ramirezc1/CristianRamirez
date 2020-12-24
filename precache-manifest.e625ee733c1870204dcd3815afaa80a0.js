@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0fce653030b2fa15c8cf43d7e7f9f0e4",
+    "revision": "1de690baac6ff0898bd10df6b4e7a2ed",
     "url": "/cristianramirez/index.html"
   },
   {
-    "revision": "73aa09b3770a83ee716e",
-    "url": "/cristianramirez/static/js/2.2a59cddf.chunk.js"
+    "revision": "caac4107280ed7398e94",
+    "url": "/cristianramirez/static/js/2.0294607d.chunk.js"
   },
   {
     "revision": "aa4100970f46d7e0ec2af84de3f2740b",
-    "url": "/cristianramirez/static/js/2.2a59cddf.chunk.js.LICENSE.txt"
+    "url": "/cristianramirez/static/js/2.0294607d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3837fbdfb71bf7a7f276",
-    "url": "/cristianramirez/static/js/main.9b9482e8.chunk.js"
+    "revision": "5bcbcd6129e14053f986",
+    "url": "/cristianramirez/static/js/main.8a4e9683.chunk.js"
   },
   {
     "revision": "e763e12d799cc24356ca",
@@ -28,8 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cristianramirez/static/media/family.a58257b8.JPG"
   },
   {
-    "revision": "39db6de60209f572c5d47113f3acaedd",
-    "url": "/cristianramirez/static/media/logo2.39db6de6.png"
+    "revision": "45ac669023bae47cb454b3345c51cfab",
+    "url": "/cristianramirez/static/media/logo1.45ac6690.svg"
+  },
+  {
+    "revision": "ea555437d6df69945d0e2117c798e2d9",
+    "url": "/cristianramirez/static/media/logo1.ea555437.png"
   },
   {
     "revision": "c9caeb84585e49cc9d712841d5a1274f",

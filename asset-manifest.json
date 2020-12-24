@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.js": "/cristianramirez/static/js/main.9b9482e8.chunk.js",
-    "main.js.map": "/cristianramirez/static/js/main.9b9482e8.chunk.js.map",
+    "main.js": "/cristianramirez/static/js/main.8a4e9683.chunk.js",
+    "main.js.map": "/cristianramirez/static/js/main.8a4e9683.chunk.js.map",
     "runtime-main.js": "/cristianramirez/static/js/runtime-main.60b0df10.js",
     "runtime-main.js.map": "/cristianramirez/static/js/runtime-main.60b0df10.js.map",
-    "static/js/2.2a59cddf.chunk.js": "/cristianramirez/static/js/2.2a59cddf.chunk.js",
-    "static/js/2.2a59cddf.chunk.js.map": "/cristianramirez/static/js/2.2a59cddf.chunk.js.map",
+    "static/js/2.0294607d.chunk.js": "/cristianramirez/static/js/2.0294607d.chunk.js",
+    "static/js/2.0294607d.chunk.js.map": "/cristianramirez/static/js/2.0294607d.chunk.js.map",
     "index.html": "/cristianramirez/index.html",
-    "precache-manifest.3d5eaa3afbd62613f009d37bf8dcf008.js": "/cristianramirez/precache-manifest.3d5eaa3afbd62613f009d37bf8dcf008.js",
+    "precache-manifest.e625ee733c1870204dcd3815afaa80a0.js": "/cristianramirez/precache-manifest.e625ee733c1870204dcd3815afaa80a0.js",
     "service-worker.js": "/cristianramirez/service-worker.js",
-    "static/js/2.2a59cddf.chunk.js.LICENSE.txt": "/cristianramirez/static/js/2.2a59cddf.chunk.js.LICENSE.txt",
+    "static/js/2.0294607d.chunk.js.LICENSE.txt": "/cristianramirez/static/js/2.0294607d.chunk.js.LICENSE.txt",
     "static/media/face.png": "/cristianramirez/static/media/face.e6240ac7.png",
     "static/media/family.JPG": "/cristianramirez/static/media/family.a58257b8.JPG",
-    "static/media/logo2.png": "/cristianramirez/static/media/logo2.39db6de6.png",
+    "static/media/logo1.svg": "/cristianramirez/static/media/logo1.45ac6690.svg",
+    "static/media/logo1.png": "/cristianramirez/static/media/logo1.ea555437.png",
     "static/media/me.png": "/cristianramirez/static/media/me.c9caeb84.png",
     "static/media/robots.png": "/cristianramirez/static/media/robots.99191d7c.png",
     "static/media/store.png": "/cristianramirez/static/media/store.b53dd15b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.60b0df10.js",
-    "static/js/2.2a59cddf.chunk.js",
-    "static/js/main.9b9482e8.chunk.js"
+    "static/js/2.0294607d.chunk.js",
+    "static/js/main.8a4e9683.chunk.js"
   ]
 }
