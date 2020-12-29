@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
-// import * as serviceWorker from "./serviceWorker";
+import * as serviceWorker from "./serviceWorker";
 
 const theme = {
   textColor: "pink",
@@ -46,4 +46,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// serviceWorker.register();
+serviceWorker.register();

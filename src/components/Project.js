@@ -76,7 +76,6 @@ const onHoverVariant = {
 };
 
 const Project = ({ title, description, icons, url, projectUrl, img }) => {
-  // console.log(img);
   return (
     <ProjectContainer
       initial={{ opacity: 0 }}
