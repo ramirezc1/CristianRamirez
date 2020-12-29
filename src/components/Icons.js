@@ -9,21 +9,49 @@ import { Html5 } from "@icons-pack/react-simple-icons";
 import { StyledComponents } from "@icons-pack/react-simple-icons";
 
 const Container = styled(motion.div)`
-  width: 50%;
+  width: 60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: fit-content;
-  color: white;
+  color: black;
 
   @media only screen and (max-width: 600px) {
     justify-content: center;
   }
 `;
 
-const StyledReactJs = styled(ReactJs)`
+const StyledReact = styled(ReactJs)`
   :hover {
-    fill: black;
-    scale: 1.4;
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+
+const StyledHtml = styled(Html5)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+
+const StyledCss = styled(Css3)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+
+const StyledComponent = styled(StyledComponents)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+
+const StyledRedux = styled(Redux)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+const StyledReactRouter = styled(Reactrouter)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
   }
 `;
 
@@ -37,12 +65,14 @@ const Icons = ({
   variant,
 }) => (
   <Container variants={variant} whileHover="hover" initial="initial">
-    {reactjs && <StyledReactJs />}
-    {html && <Html5 />}
-    {css && <Css3 />}
-    {styledComponents && <StyledComponents />}
-    {redux && <Redux />}
-    {reactRouter && <Reactrouter />}
+    {reactjs && <StyledReact size={"1.1rem"} hovercolor={"#61DAFB"} />}
+    {html && <StyledHtml size={"1.1rem"} hovercolor="#E34F26" />}
+    {css && <StyledCss size={"1.1rem"} hovercolor="#1572B6" />}
+    {styledComponents && (
+      <StyledComponent size={"1.1rem"} hovercolor="#DB7093" />
+    )}
+    {redux && <StyledRedux size={"1.1rem"} hovercolor="rgb(118, 74, 188)" />}
+    {reactRouter && <StyledReactRouter size={"1.1rem"} hovercolor="#CA4245" />}
   </Container>
 );
 

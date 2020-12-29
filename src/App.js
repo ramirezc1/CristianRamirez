@@ -12,7 +12,7 @@ const App = () => {
       <AnimatePresence>
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
-          {console.log(process.env.PUBLIC_URL)}
+
           <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
           <Route
             path={`${process.env.PUBLIC_URL}/portfolio`}

@@ -5,6 +5,8 @@ import styled from "styled-components";
 import HeightAnimation from "../components/HeightAnimation";
 import withHoverAnimation from "../components/withAnimation";
 import Logo from "../components/Logo";
+import { Linkedin } from "@icons-pack/react-simple-icons";
+import { Gmail } from "@icons-pack/react-simple-icons";
 
 const Container = styled.div`
   margin-top: 5rem;
@@ -76,7 +78,8 @@ const Contact = () => {
           variant={onHoverVariant}
           href="mailto:ramirezcristian81@live.com"
         >
-          ramirezcristian81@live.com
+          <Gmail color="#D14836" />
+          &nbsp; ramirezcristian81@live.com
         </AnimatedLink>
 
         <AnimatedLink
@@ -84,7 +87,7 @@ const Contact = () => {
           target="_blank"
           href="https://www.linkedin.com/in/ramirezc1/"
         >
-          LinkedIn
+          <Linkedin color="#0077B5" /> &nbsp; LinkedIn
         </AnimatedLink>
       </ContactContainer>
     </Container>

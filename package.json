@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://ramirezc1.github.com/cristianramirez",
+  "homepage": "https://ramirezc1.github.io/CristianRamirez/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,13 +8,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "framer-motion": "^2.9.4",
+    "framer-motion": "^2.9.5",
     "gh-pages": "^3.1.0",
-    "popmotion": "^9.0.0",
+    "popmotion": "^9.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^4.0.1",
     "styled-components": "^5.2.1"
   },
   "scripts": {

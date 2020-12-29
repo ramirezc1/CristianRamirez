@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import withHoverAnimation from "../components/withAnimation";
 import img from "./family.JPG";
 import Logo from "../components/Logo";
+import { Adobe } from "@icons-pack/react-simple-icons";
+import { Github } from "@icons-pack/react-simple-icons";
 
 // const LinkWithAnimation = withAnimation(Link);
 const Container = styled.div`
@@ -107,7 +109,16 @@ const About = () => {
           target="_blank"
           download
         >
-          My Resume (pdf)
+          <Adobe color="#FF0000" />
+          &nbsp; My Resume (pdf)
+        </AnimatedLink>
+        <AnimatedLink
+          variant={onHoverVariant}
+          target="_blank"
+          href="https://github.com/ramirezc1"
+        >
+          <Github />
+          &nbsp; GitHub
         </AnimatedLink>
       </AboutContainer>
     </Container>

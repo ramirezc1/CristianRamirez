@@ -53,9 +53,10 @@ const Next = styled(Button)`
 const data = [
   {
     image: store,
-    title: "Shipping Site",
+    title: "CRWN Clothing",
     description: "E Commerce App",
     url: "https://crwn-live-lt.herokuapp.com/",
+    projectUrl: "https://github.com/ramirezc1/clothing-store",
     icons: {
       reactjs: true,
       html: true,
@@ -66,16 +67,18 @@ const data = [
   },
   {
     image: face,
-    title: "FaceDetection",
+    title: "Face Detection",
     description: "Full Stack App",
     url: "https://face-recognition-app2.herokuapp.com/",
+    projectUrl: "https://github.com/ramirezc1/faceRecognition",
     icons: { reactjs: true, html: true },
   },
   {
     image: robots,
-    title: "RobotFriends",
+    title: "Robot Friends",
     description: "PWA React App",
     url: "https://ramirezc1.github.io/RobotFriends/",
+    projectUrl: "https://github.com/ramirezc1/RobotFriends",
     icons: { reactjs: true, html: true, redux: true },
   },
 ];
@@ -96,6 +99,7 @@ const Portfolio = () => {
         key={data[index].title}
         title={data[index].title}
         url={data[index].url}
+        projectUrl={data[index].projectUrl}
         description={data[index].description}
         icons={data[index].icons}
         img={data[index].image}
