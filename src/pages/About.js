@@ -6,7 +6,7 @@ import HeightAnimation from "../components/HeightAnimation";
 // import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import withHoverAnimation from "../components/withAnimation";
-import img from "./family.JPG";
+import img from "./family.webp";
 import Logo from "../components/Logo";
 import { Adobe } from "@icons-pack/react-simple-icons";
 import { Github } from "@icons-pack/react-simple-icons";
@@ -74,7 +74,7 @@ const About = () => {
         </HeightAnimation>
       </SubContainer>
 
-      <Image src={img}></Image>
+      <Image alt="family image" src={img}></Image>
       <AboutContainer>
         <SubHeadingText>About</SubHeadingText>
 

@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
+// import * as serviceWorker from "./serviceWorker";
+
 const theme = {
   textColor: "pink",
   linkColor: "#ea0f1e",
@@ -43,3 +45,5 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 );
+
+// serviceWorker.register();

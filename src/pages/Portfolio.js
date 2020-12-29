@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { wrap } from "popmotion";
 import styled from "styled-components";
 import Project from "../components/Project";
-import store from "../assets/images/store.png";
-import robots from "../assets/images/robots.png";
-import face from "../assets/images/face.png";
+import store from "../assets/images/store.webp";
+import robots from "../assets/images/robots.webp";
+import face from "../assets/images/face.webp";
 import Logo from "../components/Logo";
 
 const Container = styled.div`

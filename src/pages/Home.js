@@ -2,7 +2,7 @@ import React from "react";
 import AnimatedSwitchLink from "../components/AnimatedSwitchLink";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import img from "../assets/images/me.png";
+import img from "../assets/images/me.webp";
 import Logo from "../components/Logo";
 
 const BigImage = styled.div`

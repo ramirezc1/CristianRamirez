@@ -1,11 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
-//TODO import logo as SVG and animate it
-// import l from "../assets/images/logo1.svg";
 
 const Container = styled.div`
   position: fixed;
@@ -17,12 +14,13 @@ const Container = styled.div`
 
 const Image = styled(motion.img)`
   height: 100%;
+  transform: rotate(90deg);
 `;
 const Logo = () => {
   return (
     <Container>
       <Link to={`${process.env.PUBLIC_URL}/`}>
-        <Image whileHover={{ scale: 1.1 }} src={logo}></Image>
+        <Image alt="logo" whileHover={{ scale: 1.1 }} src={logo}></Image>
       </Link>
     </Container>
   );

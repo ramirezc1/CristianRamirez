@@ -88,7 +88,7 @@ const Project = ({ title, description, icons, url, projectUrl, img }) => {
       <Heading>{title}</Heading>
 
       <SubHeading>{description}</SubHeading>
-      <Image src={img}></Image>
+      <Image alt="project screenshot" src={img}></Image>
       <LinkContainer>
         <StyledLink whileHover={{ scale: 1.1 }} target="_blank" href={url}>
           Live Demo
