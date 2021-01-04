@@ -79,7 +79,13 @@ const data = [
     description: "PWA React App",
     url: "https://ramirezc1.github.io/RobotFriends/",
     projectUrl: "https://github.com/ramirezc1/RobotFriends",
-    icons: { reactjs: true, html: true, redux: true },
+    icons: {
+      reactjs: true,
+      html: true,
+      redux: true,
+      typeScript: true,
+      jest: true,
+    },
   },
 ];
 
