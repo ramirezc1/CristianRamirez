@@ -1,12 +1,12 @@
-import React, { lazy, Suspense } from "react";
+// import React, { lazy, Suspense } from "react";
 import AnimatedSwitchLink from "../components/AnimatedSwitchLink";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Logo from "../components/Logo";
+import img from "../assets/images/me.webp";
 
-const img = lazy(() => import("../assets/images/me.webp"));
+// const img = lazy(() => import("../assets/images/me.webp"));
 //TODO add loader component
-const Loader = () => <p>Loading...</p>;
 
 const BigImage = styled.div`
   background-size: cover;
@@ -54,9 +54,9 @@ const Home = () => {
         toLink={`${process.env.PUBLIC_URL}/contact`}
       ></AnimatedSwitchLink>
 
-      <Suspense fallback={Loader()}>
-        <BigImage></BigImage>
-      </Suspense>
+      {/* <Suspense fallback={<p>Loading...</p>}> */}
+      <BigImage></BigImage>
+      {/* </Suspense> */}
     </Container>
   );
 };

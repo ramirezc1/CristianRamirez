@@ -14,7 +14,6 @@ const Container = styled.div`
 
 const Image = styled(motion.img)`
   height: 100%;
-  transform: rotate(90deg);
 `;
 const Logo = () => {
   return (
