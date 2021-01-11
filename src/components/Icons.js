@@ -12,6 +12,7 @@ import { Typescript } from "@icons-pack/react-simple-icons";
 import { Redis } from "@icons-pack/react-simple-icons";
 import { Postgresql } from "@icons-pack/react-simple-icons";
 import { Docker } from "@icons-pack/react-simple-icons";
+import withTooltip from "./withTooltip";
 
 const Container = styled(motion.div)`
   width: 60%;
@@ -25,68 +26,17 @@ const Container = styled(motion.div)`
   }
 `;
 
-const StyledReact = styled(ReactJs)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-const StyledDocker = styled(Docker)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-
-const StyledRedis = styled(Redis)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-const StyledPSQL = styled(Postgresql)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-
-const StyledHtml = styled(Html5)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-
-const StyledCss = styled(Css3)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-
-const StyledComponent = styled(StyledComponents)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-
-const StyledRedux = styled(Redux)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-const StyledReactRouter = styled(Reactrouter)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-
-const StyledJest = styled(Jest)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
-
-const StyledTypeScript = styled(Typescript)`
-  :hover {
-    fill: ${(props) => props.hovercolor};
-  }
-`;
+const TooltipReact = withTooltip(ReactJs);
+const TooltipDocker = withTooltip(Docker);
+const TooltipRedis = withTooltip(Redis);
+const TooltipPSQL = withTooltip(Postgresql);
+const TooltipHtml = withTooltip(Html5);
+const TooltipCss = withTooltip(Css3);
+const TooltipStyledComponent = withTooltip(StyledComponents);
+const TooltipRedux = withTooltip(Redux);
+const TooltipReactRouter = withTooltip(Reactrouter);
+const TooltipTypeScript = withTooltip(Typescript);
+const TooltipJest = withTooltip(Jest);
 
 const Icons = ({
   reactjs,
@@ -103,19 +53,49 @@ const Icons = ({
   variant,
 }) => (
   <Container variants={variant} whileHover="hover" initial="initial">
-    {reactjs && <StyledReact size={"1.1rem"} hovercolor={"#61DAFB"} />}
-    {html && <StyledHtml size={"1.1rem"} hovercolor="#E34F26" />}
-    {css && <StyledCss size={"1.1rem"} hovercolor="#1572B6" />}
-    {styledComponents && (
-      <StyledComponent size={"1.1rem"} hovercolor="#DB7093" />
+    {reactjs && (
+      <TooltipReact title="ReactJs" size={"1.1rem"} hovercolor={"#61DAFB"} />
     )}
-    {redux && <StyledRedux size={"1.1rem"} hovercolor="rgb(118, 74, 188)" />}
-    {reactRouter && <StyledReactRouter size={"1.1rem"} hovercolor="#CA4245" />}
-    {jest && <StyledJest size={"1.1rem"} hovercolor="#CA4245" />}
-    {typeScript && <StyledTypeScript size={"1.1rem"} hovercolor="#3178C6" />}
-    {redis && <StyledRedis size={"1.1rem"} hovercolor="#CA4245" />}
-    {psql && <StyledPSQL size={"1.1rem"} hovercolor="#336791" />}
-    {docker && <StyledDocker size={"1.1rem"} hovercolor="#2496ED" />}
+    {html && <TooltipHtml title="HTML5" size={"1.1rem"} hovercolor="#E34F26" />}
+    {css && <TooltipCss title="CSS3" size={"1.1rem"} hovercolor="#1572B6" />}
+    {styledComponents && (
+      <TooltipStyledComponent
+        title="StyledComponets"
+        size={"1.1rem"}
+        hovercolor="#DB7093"
+      />
+    )}
+    {redux && (
+      <TooltipRedux
+        title="Redux"
+        size={"1.1rem"}
+        hovercolor="rgb(118, 74, 188)"
+      />
+    )}
+    {reactRouter && (
+      <TooltipReactRouter
+        title="TypeScript"
+        size={"1.1rem"}
+        hovercolor="#CA4245"
+      />
+    )}
+    {jest && <TooltipJest title="Jest" size={"1.1rem"} hovercolor="#CA4245" />}
+    {typeScript && (
+      <TooltipTypeScript
+        size={"1.1rem"}
+        title="TypeScript"
+        hovercolor="#3178C6"
+      />
+    )}
+    {redis && (
+      <TooltipRedis title="Redis" size={"1.1rem"} hovercolor="#CA4245" />
+    )}
+    {psql && (
+      <TooltipPSQL title="PostgresSQL" size={"1.1rem"} hovercolor="#336791" />
+    )}
+    {docker && (
+      <TooltipDocker title="Docker" size={"1.1rem"} hovercolor="#2496ED" />
+    )}
   </Container>
 );
 
