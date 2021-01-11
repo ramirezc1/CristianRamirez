@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/CristianRamirez/static/js/main.38e914be.chunk.js",
-    "main.js.map": "/CristianRamirez/static/js/main.38e914be.chunk.js.map",
+    "main.js": "/CristianRamirez/static/js/main.ea35ebd0.chunk.js",
+    "main.js.map": "/CristianRamirez/static/js/main.ea35ebd0.chunk.js.map",
     "runtime-main.js": "/CristianRamirez/static/js/runtime-main.f1014ac7.js",
     "runtime-main.js.map": "/CristianRamirez/static/js/runtime-main.f1014ac7.js.map",
-    "static/js/2.e7d24707.chunk.js": "/CristianRamirez/static/js/2.e7d24707.chunk.js",
-    "static/js/2.e7d24707.chunk.js.map": "/CristianRamirez/static/js/2.e7d24707.chunk.js.map",
+    "static/js/2.a64b5f58.chunk.js": "/CristianRamirez/static/js/2.a64b5f58.chunk.js",
+    "static/js/2.a64b5f58.chunk.js.map": "/CristianRamirez/static/js/2.a64b5f58.chunk.js.map",
     "index.html": "/CristianRamirez/index.html",
-    "static/js/2.e7d24707.chunk.js.LICENSE.txt": "/CristianRamirez/static/js/2.e7d24707.chunk.js.LICENSE.txt",
-    "static/media/face.d733b909.webp": "/CristianRamirez/static/media/face.d733b909.webp",
+    "static/js/2.a64b5f58.chunk.js.LICENSE.txt": "/CristianRamirez/static/js/2.a64b5f58.chunk.js.LICENSE.txt",
+    "static/media/face.fc40a8cc.webp": "/CristianRamirez/static/media/face.fc40a8cc.webp",
     "static/media/family.916ce26e.webp": "/CristianRamirez/static/media/family.916ce26e.webp",
     "static/media/logo.22eff46a.svg": "/CristianRamirez/static/media/logo.22eff46a.svg",
     "static/media/me.7d6048f4.webp": "/CristianRamirez/static/media/me.7d6048f4.webp",
@@ -17,7 +17,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f1014ac7.js",
-    "static/js/2.e7d24707.chunk.js",
-    "static/js/main.38e914be.chunk.js"
+    "static/js/2.a64b5f58.chunk.js",
+    "static/js/main.ea35ebd0.chunk.js"
   ]
 }
