@@ -9,13 +9,16 @@ import { Html5 } from "@icons-pack/react-simple-icons";
 import { StyledComponents } from "@icons-pack/react-simple-icons";
 import { Jest } from "@icons-pack/react-simple-icons";
 import { Typescript } from "@icons-pack/react-simple-icons";
+import { Redis } from "@icons-pack/react-simple-icons";
+import { Postgresql } from "@icons-pack/react-simple-icons";
+import { Docker } from "@icons-pack/react-simple-icons";
 
 const Container = styled(motion.div)`
   width: 60%;
   display: flex;
   justify-content: space-evenly;
   height: fit-content;
-  color: black;
+  color: white;
 
   @media only screen and (max-width: 600px) {
     justify-content: center;
@@ -23,6 +26,22 @@ const Container = styled(motion.div)`
 `;
 
 const StyledReact = styled(ReactJs)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+const StyledDocker = styled(Docker)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+
+const StyledRedis = styled(Redis)`
+  :hover {
+    fill: ${(props) => props.hovercolor};
+  }
+`;
+const StyledPSQL = styled(Postgresql)`
   :hover {
     fill: ${(props) => props.hovercolor};
   }
@@ -78,6 +97,9 @@ const Icons = ({
   redux,
   jest,
   typeScript,
+  redis,
+  psql,
+  docker,
   variant,
 }) => (
   <Container variants={variant} whileHover="hover" initial="initial">
@@ -91,6 +113,9 @@ const Icons = ({
     {reactRouter && <StyledReactRouter size={"1.1rem"} hovercolor="#CA4245" />}
     {jest && <StyledJest size={"1.1rem"} hovercolor="#CA4245" />}
     {typeScript && <StyledTypeScript size={"1.1rem"} hovercolor="#3178C6" />}
+    {redis && <StyledRedis size={"1.1rem"} hovercolor="#CA4245" />}
+    {psql && <StyledPSQL size={"1.1rem"} hovercolor="#336791" />}
+    {docker && <StyledDocker size={"1.1rem"} hovercolor="#2496ED" />}
   </Container>
 );
 

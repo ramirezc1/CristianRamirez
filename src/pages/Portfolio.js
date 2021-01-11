@@ -71,7 +71,7 @@ const data = [
     description: "Full Stack App",
     url: "https://face-recognition-app2.herokuapp.com/",
     projectUrl: "https://github.com/ramirezc1/faceRecognition",
-    icons: { reactjs: true, html: true },
+    icons: { reactjs: true, html: true, redis: true, psql: true, docker: true },
   },
   {
     image: robots,
