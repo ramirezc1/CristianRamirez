@@ -1,13 +1,12 @@
-import * as React from "react";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { wrap } from "popmotion";
-import styled from "styled-components";
-import Project from "../components/Project";
-import store from "../assets/images/store.webp";
-import robots from "../assets/images/robots.webp";
-import face from "../assets/images/face.webp";
-import Logo from "../components/Logo";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { wrap } from 'popmotion';
+import styled from 'styled-components';
+import Project from '../components/Project';
+import store from '../assets/images/store.webp';
+import robots from '../assets/images/robots.webp';
+import face from '../assets/images/face.webp';
+import Logo from '../components/Logo';
 
 const Container = styled.div`
   display: flex;
@@ -53,10 +52,10 @@ const Next = styled(Button)`
 const data = [
   {
     image: store,
-    title: "CRWN Clothing",
-    description: "E Commerce App",
-    url: "https://crwn-live-lt.herokuapp.com/",
-    projectUrl: "https://github.com/ramirezc1/clothing-store",
+    title: 'CRWN Clothing',
+    description: 'E Commerce App',
+    url: 'https://crwn-live-lt.herokuapp.com/',
+    projectUrl: 'https://github.com/ramirezc1/clothing-store',
     icons: {
       reactjs: true,
       html: true,
@@ -67,18 +66,18 @@ const data = [
   },
   {
     image: face,
-    title: "Face Detection",
-    description: "Full Stack App",
-    url: "https://face-recognition-app2.herokuapp.com/",
-    projectUrl: "https://github.com/ramirezc1/faceRecognition",
+    title: 'Face Detection',
+    description: 'Full Stack App',
+    url: 'https://face-recognition-app2.herokuapp.com/',
+    projectUrl: 'https://github.com/ramirezc1/faceRecognition',
     icons: { reactjs: true, html: true, redis: true, psql: true, docker: true },
   },
   {
     image: robots,
-    title: "Robot Friends",
-    description: "PWA React App",
-    url: "https://ramirezc1.github.io/RobotFriends/",
-    projectUrl: "https://github.com/ramirezc1/RobotFriends",
+    title: 'Robot Friends',
+    description: 'PWA React App',
+    url: 'https://ramirezc1.github.io/RobotFriends/',
+    projectUrl: 'https://github.com/ramirezc1/RobotFriends',
     icons: {
       reactjs: true,
       html: true,
@@ -100,7 +99,7 @@ const Portfolio = () => {
 
   return (
     <Container>
-      <CenteredLogo></CenteredLogo>
+      <CenteredLogo />
       <Project
         key={data[index].title}
         title={data[index].title}
@@ -109,7 +108,7 @@ const Portfolio = () => {
         description={data[index].description}
         icons={data[index].icons}
         img={data[index].image}
-      ></Project>
+      />
       <Next whileHover={{ scale: 1.2 }} onClick={() => paginate(1)}>
         &#10095;
       </Next>

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-
-import { motion } from "framer-motion";
-import styled from "styled-components";
-import Link from "./Link";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import Link from './Link';
 
 const Container = styled(motion.div)`
   position: relative;
@@ -38,4 +38,10 @@ const AnimatedSwitchLink = ({ toLink, inputColor, fromText, toText }) => {
   );
 };
 
+AnimatedSwitchLink.propTypes = {
+  toLink: PropTypes.string.isRequired,
+  inputColor: PropTypes.string.isRequired,
+  fromText: PropTypes.string.isRequired,
+  toText: PropTypes.string.isRequired,
+};
 export default AnimatedSwitchLink;

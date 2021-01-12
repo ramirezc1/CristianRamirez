@@ -1,13 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import { BrowserRouter as Router } from "react-router-dom";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
-import * as serviceWorker from "./serviceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
 const theme = {
-  textColor: "pink",
-  linkColor: "#ea0f1e",
+  textColor: 'pink',
+  linkColor: '#ea0f1e',
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -43,7 +43,7 @@ ReactDOM.render(
       <App />
     </ThemeProvider>
   </Router>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 serviceWorker.register();

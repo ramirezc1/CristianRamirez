@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import logo from "../assets/images/logo.svg";
 
 const Container = styled.div`
   position: fixed;
@@ -15,14 +15,12 @@ const Container = styled.div`
 const Image = styled(motion.img)`
   height: 100%;
 `;
-const Logo = () => {
-  return (
-    <Container>
-      <Link to={`${process.env.PUBLIC_URL}/`}>
-        <Image alt="logo" whileHover={{ scale: 1.1 }} src={logo}></Image>
-      </Link>
-    </Container>
+const Logo = () => (
+  <Container>
+    <Link to={`${process.env.PUBLIC_URL}/`}>
+      <Image alt="logo" whileHover={{ scale: 1.1 }} src={logo} />
+    </Link>
+  </Container>
   );
-};
 
 export default Logo;
