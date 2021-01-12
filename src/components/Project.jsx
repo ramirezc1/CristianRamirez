@@ -16,7 +16,6 @@ const ProjectContainer = styled(motion.div)`
   padding: 20px;
   z-index: 1;
   opacity: 0.7;
-
   /* background-image: ${(props) => `url(${props.img})`}; */
 `;
 
