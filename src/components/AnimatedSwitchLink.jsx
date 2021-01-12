@@ -37,10 +37,12 @@ const AnimatedSwitchLink = ({ toLink, inputColor, fromText, toText }) => {
     </Container>
   );
 };
-
+AnimatedSwitchLink.defaultProps = {
+  inputColor: '#ea0f1e',
+};
 AnimatedSwitchLink.propTypes = {
   toLink: PropTypes.string.isRequired,
-  inputColor: PropTypes.string.isRequired,
+  inputColor: PropTypes.string,
   fromText: PropTypes.string.isRequired,
   toText: PropTypes.string.isRequired,
 };

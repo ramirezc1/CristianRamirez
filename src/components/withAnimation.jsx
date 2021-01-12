@@ -10,13 +10,14 @@ const Container = styled(motion.div)`
 `;
 
 const withHoverAnimation = (Component) => {
-  const WrappedComponent = ({ variant }) => (
+  const WrappedComponent = ({ variant, ...props }) => (
     <Container variants={variant} whileHover='hover' initial='initial'>
-      <Component />
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+      <Component {...props} />
     </Container>
   );
   WrappedComponent.propTypes = {
-    variant: PropTypes.objectOf(PropTypes.string).isRequired,
+    variant: PropTypes.objectOf(PropTypes.object).isRequired,
   };
   return WrappedComponent;
 };
