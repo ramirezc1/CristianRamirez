@@ -103,7 +103,7 @@ const About = () => (
 
       <AnimatedLink
         variant={onHoverVariant}
-        to='/files/CristianRamirezResume.pdf'
+        to={`${process.env.PUBLIC_URL}/files/CristianRamirezResume.pdf`}
         target='_blank'
         download
       >
