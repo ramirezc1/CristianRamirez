@@ -113,6 +113,7 @@ const About = () => (
       <AnimatedLink
         variant={onHoverVariant}
         target='_blank'
+        to=''
         href='https://github.com/ramirezc1'
       >
         <Github />

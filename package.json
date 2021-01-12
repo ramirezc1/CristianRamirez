@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://ramirezc1.github.io/CristianRamirez/",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@icons-pack/react-simple-icons": "^3.13.0",

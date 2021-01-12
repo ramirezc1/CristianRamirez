@@ -19,7 +19,7 @@ const Link = ({ to, children, inputColor }) => (
       {children}
     </StyledLink>
   </motion.div>
-  );
+);
 
 Link.propTypes = {
   to: PropTypes.string.isRequired,
