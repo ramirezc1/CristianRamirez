@@ -1,62 +1,18 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable no-irregular-whitespace */
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-
-import styled from 'styled-components';
 import { Linkedin, Gmail } from '@icons-pack/react-simple-icons';
 import { HeadingText, SubHeadingText, Text } from '../components/TextStyles';
 import HeightAnimation from '../components/HeightAnimation';
 import withHoverAnimation from '../components/withAnimation';
 import Logo from '../components/Logo';
-
-const Container = styled.div`
-  margin-top: 5rem;
-  width: 100vw;
-  margin: 0 auto;
-  max-width: 95%;
-  overflow-y: hidden;
-  @media only screen and (max-width: 600px) {
-    margin: auto;
-    max-width: 80%;
-  }
-`;
-
-const ContactContainer = styled.section`
-  margin: 0 auto;
-  max-width: 70%;
-  @media only screen and (max-width: 600px) {
-    max-width: 95%;
-    margin: auto;
-  }
-`;
-
-const SubContainer = styled.section`
-  margin-top: 4rem;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 70%;
-  @media only screen and (max-width: 600px) {
-    max-width: 100%;
-    margin: auto;
-    padding-top: 2rem;
-  }
-`;
-
-const StyledLink = styled.a`
-  text-decoration: none;
-  color: black;
-  font-size: 0.95rem;
-  font-weight: 700;
-`;
+import {
+  ContactContainer,
+  Container,
+  StyledLink,
+  SubContainer,
+  onHoverVariant,
+} from './Contact.styles';
 
 const AnimatedLink = withHoverAnimation(StyledLink);
-
-const onHoverVariant = {
-  hover: {
-    x: 20,
-  },
-};
 
 const Contact = () => (
   <Container>
@@ -70,8 +26,9 @@ const Contact = () => (
     <ContactContainer>
       <SubHeadingText>Contact</SubHeadingText>
       <Text>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         Please don't hesitate to reach out if you have any questions. I look
-        forward to connecting and gaining new experiences.  
+        forward to connecting and gaining new experiences.
       </Text>
 
       {/* TODO- add icons  */}
@@ -88,6 +45,7 @@ const Contact = () => (
         target='_blank'
         href='https://www.linkedin.com/in/ramirezc1/'
       >
+        {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
         <Linkedin color='#0077B5' /> &nbsp; LinkedIn
       </AnimatedLink>
     </ContactContainer>

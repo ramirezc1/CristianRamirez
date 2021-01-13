@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Link from './Link';
 
-const Container = styled(motion.div)`
+const Container = styled(motion.header)`
   position: relative;
   margin: 20px;
   width: fit-content;
